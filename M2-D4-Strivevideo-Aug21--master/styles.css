@@ -1,0 +1,158 @@
+body {
+  background-color: #0f171e;
+}
+
+.bg-svideo-dark {
+  background-color: #0f171e;
+  background-image: linear-gradient(180deg, #1b2530 0, rgba(27, 37, 48, 0.85));
+  background-repeat: repeat-x;
+}
+
+.navbar-nav .nav-item .nav-link {
+  padding: 0;
+  margin: 0 8px;
+}
+
+.navbar-nav .active .nav-link {
+  border-bottom: 1px solid white;
+}
+
+.nav-btn {
+  color: rgba(242, 244, 246, 0.7);
+}
+
+.nav-btn:hover {
+  color: rgba(242, 244, 246, 0.9);
+}
+
+.nav-btn span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 50px;
+  vertical-align: middle;
+}
+
+.carousel-indicators li {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.section-title {
+  position: relative;
+  left: -11px;
+}
+
+.section-title img {
+  position: relative;
+  top: -3px;
+}
+
+.prime-badge {
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+
+/* ADDED AFTER THE LECTURE */
+
+.dropdown-menu {
+  /* aligns dropdown to the right */
+  left: unset;
+  right: 0;
+}
+
+/* customizing dropdown-toggle's color */
+nav .dropdown-toggle {
+  color: #ffffffa6;
+}
+nav .dropdown-toggle:hover,
+nav .dropdown-toggle:focus {
+  color: white;
+}
+
+nav .dropdown-menu {
+  background-color: #252e39;
+  padding: 0;
+}
+
+nav .dropdown-item {
+  color: #f2f4f6e6;
+  padding: 14px 48px 14px 16px;
+  border-bottom: 1px solid #303c4a;
+}
+
+nav li:last-child .dropdown-item {
+  border: none;
+}
+
+nav .btn-group .dropdown-menu .dropdown-item:last-child {
+  border-bottom: none;
+}
+
+nav .dropdown-item:focus,
+nav .dropdown-item:hover {
+  color: white;
+  background-color: transparent;
+}
+
+/* customizing carousel controls */
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 42px;
+  height: 42px;
+  filter: drop-shadow(0 6px 3px rgba(0, 0, 0, 0.3));
+}
+.carousel-control-prev-icon {
+  background-image: url(../logo/prev-arrow.svg);
+}
+
+.carousel-control-next-icon {
+  background-image: url(../logo/next-arrow.svg);
+}
+
+.carousel-indicators li {
+  box-shadow: 1px 1px 4px rgb(0 0 0 / 40%);
+  border-top: 0;
+  border-bottom: 0;
+}
+
+/* footer section */
+a {
+  color: #01a3db;
+}
+
+a:hover {
+  color: #14b5eb;
+}
+
+footer {
+  text-align: center;
+}
+
+footer .footer-logo {
+  display: inline-block;
+  width: 120px;
+  height: 48px;
+  background-image: url("../logo/strivevideo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+footer ul:last-of-type {
+  color: rgba(255, 255, 255, 0.45);
+}
