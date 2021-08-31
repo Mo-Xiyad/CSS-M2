@@ -1,7 +1,6 @@
 /*
       JS Exercises
-      EX14) Write a function to remove all the links under "Elsewhere"
-      EX15) Write a function to change the column size for heading in jumbotron
+
       EX16) Write a function to remove the "Search" magnifying glass icon
       EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
       EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
@@ -32,8 +31,20 @@ const jumbotronBackground = function () {
 
 }
 
+// EX14) Write a function to remove all the links under "Elsewhere"
+
+const removelinksElsewhere = function () {
+    let etags = document.querySelectorAll('aside > div:nth-of-type(3) > ol > li a')
+    for (let i of etags) {
+        i.remove()
+    }
+}
+
+// EX15) Write a function to change the column size for heading in jumbotron
+
 window.onload = function () {
     addnewlinkToNav()
     changeColorOfMainTitle()
     jumbotronBackground()
+    removelinksElsewhere()
 }
