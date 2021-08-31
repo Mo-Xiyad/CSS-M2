@@ -57,3 +57,7 @@ body footer.blog-footer{
     height:50px;
     background:darkseagreen;
 }
+
+.jumbo{
+    background-color:darkseagreen !important;
+}
