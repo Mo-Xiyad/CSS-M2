@@ -1,0 +1,133 @@
+#first.row .col > div:not(.elementIWant) {
+  width: 50px;
+  height: 50px;
+  background-color: olivedrab;
+  margin-left: 20px;
+}
+
+/* .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, */
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active {
+  background-color: red;
+  border-color: white;
+  color: black;
+}
+
+#third div.box ul li p {
+  border-bottom: 1px solid red;
+}
+/* #third div.box > ul > li > ul > li {
+  border-bottom: 1px solid red;
+} */
+
+#fourth .divIWant > h2 + p {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+#fourth .divIWant + p {
+  color: red;
+}
+
+#fifth p.starting-point ~ ul:not(:last-child):not(.last-child) {
+  background-color: aquamarine;
+}
+
+#sixth input[placeholder~="Username" i] {
+  border-color: red;
+}
+
+#sixth input[placeholder*="name" i] {
+  border-color: red;
+}
+
+#sixth input[type="checkbox"][checked],
+#sixth input[type="checkbox"]:checked {
+  margin-left: 20px;
+}
+
+#seventh a[href^="https://"]
+{
+  color: green;
+}
+
+#seventh a[href^="http://"]
+{
+  color: red;
+}
+
+#seventh a[href$=".png"] {
+  color: purple;
+}
+
+#eigth > div:first-of-type {
+  color: red !important;
+  background-color: aqua !important;
+}
+
+#eigth > div:nth-of-type(4) {
+  color: red !important;
+  background-color: aqua !important;
+}
+
+#eigth > div:last-of-type {
+  color: red !important;
+  background-color: aqua !important;
+}
+
+#ninth {
+  position: relative;
+  z-index: 0;
+}
+
+#ninth .box {
+  position: relative;
+}
+
+#ninth .box::before {
+  content: "<<";
+  background-color: red;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -30px;
+  left: -30px;
+  z-index: -1;
+}
+
+#ninth .box::after {
+  content: ">>";
+  background-color: blue;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-wrapper img + p {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 1rem;
+  margin-bottom: 0;
+}
+
+.img-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
