@@ -1,7 +1,3 @@
-/*
-      JS Exercises
-      EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
-  */
 // EX11) Write a function to add a new link into the navbar
 
 const addnewlinkToNav = function () {
@@ -70,26 +66,48 @@ const trimCharacters = function () {
 
 // EX18) Write a function and attach it to the "Newer" button, to add new Blog Post(just div and title)
 const newPost = function () {
-    let blogNode = document.querySelector('.blog-main .blog-post')
+    let blogNode = document.querySelector('.blog-main') //This selector will show the post at the BOTTOM
+    // let blogNode = document.querySelector('.blog-main .blog-post') //This selector will show the post at the TOP
 
     let nPost = document.createElement('div')
-    nPost.classList.add('col-md-8')
+    nPost.classList.add('col-md-8', 'new-post')
     nPost.innerHTML += `
                         <h1>New Post</h1>
                         <p class="blog-post-meta">
             August 30, 2021 by Zee
-          </p>
-                    
-                            `
-
-    blogNode.prepend(nPost)
+          </p> `
+    // blogNode.prepend(nPost)
+    blogNode.appendChild(nPost)
 }
 
 // EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
+const removePost = function () {
+    let recent = document.querySelector('.new-post')
+    let blogNode = document.querySelector('.blog-main .blog-post')
+    if (recent !== null) {
+        recent.remove()
+    } else {
+        blogNode.remove()
+    }
+}
 
+// EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
+// const addatt = document.querySelectorAll('.blog-post-meta > a')
+
+const alertUserName = function (e) {
+    let author = document.querySelectorAll('.blog-post-meta > a')
+
+    for (let i = 0; i < author.length; i++) {
+        author[i].addEventListener("mouseover", function (event) {
+            alert(author[i].innerText)
+        })
+    }
+
+}
 
 
 window.onload = function () {
+    alertUserName()
     trimCharacters()
     changeColSize()
     addnewlinkToNav()
