@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency</title>
+    <!-- Bootstrap Css links -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <style>
+      .carousel-item img{
+        height: 300px;
+        object-fit: cover;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- Nav bar starts -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="./nav.png" width="30" height="30" alt="" />
+      </a>
+      <a class="navbar-brand mb-0 h1" href="#">Travel & Tour</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#favouritealbums">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Popular</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Nav-bar -->
+    <!-- Ex 3) Add a Jumbotron section with the name and the claim of the tour operator agency-->
+    <div class="jumbotron shadow-lg text-center">
+      <h1 class="display-4">
+        The best of <br />
+        <span class="ml-5 pl-5">Scandinavia</span>
+      </h1>
+    </div>
+    <!-- end question three -->
+    <!-- Q4 Deal of the Week -->
+    <div class="container">
+      <h3>Deal of the Week</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur
+        laudantium perferendis culpa voluptatem? Esse magni soluta, amet sint ut
+        ipsum quo iure veritatis consequatur eligendi modi eos quia totam nobis?
+      </p>
+      <div class="row pt-5">
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img src="./destination1.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Maldives</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Book today</a>
+              <p class="info d-inline-block">
+                <i class="bi bi-currency-dollar"></i>500
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- one -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img src="./destination1.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Indonasia</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Book today</a>
+              <p class="info d-inline-block">
+                <i class="bi bi-currency-dollar"></i>500
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- two -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img src="./destination1.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Sweden</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Book today</a>
+              <p class="info d-inline-block">
+                <i class="bi bi-currency-dollar"></i>500
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- three -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img src="./destination1.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Thailand</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Book today</a>
+              <p class="info d-inline-block">
+                <i class="bi bi-currency-dollar"></i>500
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- four -->
+      </div>
+    </div>
+    <!-- Q5 -->
+    <div class="container-fluid px-0 mt-5">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./summer1.webp"
+              class="d-block w-100"
+              height="100%"
+              
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./summer2.jpeg"
+              class="d-block w-100"
+              height="100%"
+              
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./summer3.jpeg"
+              class="d-block w-100"
+              height="100%"
+              
+              alt="..."
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Q5-->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 mb-5">
+          <h1 class="text-center shadow-lg p-3 mb-5 bg-white rounded">
+            Summer destionations 2021
+          </h1>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lx-2 mb-3">
+          <div class="card">
+            <img src="./summer 1.jfif" class="card-img-top" height="220" style="object-fit:cover">
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="col-6 col-sm-6 col-md-4 col-lx-2 mb-3">
+          <div class="card">
+            <img src="./summer 2.jfif" class="card-img-top" alt="..." height="220" style="object-fit:cover"/>
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="col-6 col-sm-6 col-md-4 col-lx-2 mb-3">
+          <div class="card">
+            <img src="./sumer 3.jfif" class="card-img-top" alt="..." height="220" style="object-fit:cover">
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="col-6 col-sm-6 col-md-4 col-lx-2 mb-3">
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5B9pK4xH4sCTc_RkhJjjl-ijmA9aczhsycTAD-RkWGeCkVZcI840WG7TEegwekvxOSEQ&usqp=CAU"
+              class="card-img-top"
+              height="220" style="object-fit:cover">
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="col-6 col-sm-6 col-md-4 col-lx-2 mb-3">
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXJJBt9SheTieQWQx67pSk5y0CrpRwNlA_vA500E1WQdq0uyT93WA6-0eK3wItH6bwrDI&usqp=CAU"
+              class="card-img-top"
+              alt="..." height="220" style="object-fit:cover"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="col-6 col-sm-6 col-md-4 col-lx-2 mb-3">
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5B9pK4xH4sCTc_RkhJjjl-ijmA9aczhsycTAD-RkWGeCkVZcI840WG7TEegwekvxOSEQ&usqp=CAU"
+              class="card-img-top"
+              alt="..." height="220" style="object-fit:cover"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+    <!--  -->
+    <!-- Q6 -->
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-5">
+          <h3 class="btn text-center shadow-lg p-3 mb-5 bg-white rounded">
+            Deal of the day
+          </h3>
+        </div>
+      </div>
+      <!--  -->
+      <div class="row">
+        <div class="col-8">
+          <img
+            src="./summer 2.jfif"
+            class="img-fluid w-100"
+            height="100%"
+            style="object-fit: cover"
+            alt=""
+          />
+        </div>
+        <div class="col-4 pt-5">
+          <ul class="list-group list-group-flush pt-5">
+            <li class="list-group-item">Price:</li>
+            <li class="list-group-item">Destination:</li>
+            <li class="list-group-item">Some other info</li>
+            <li class="list-group-item">Some other info</li>
+            <li class="list-group-item">Some other info</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap js links -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
