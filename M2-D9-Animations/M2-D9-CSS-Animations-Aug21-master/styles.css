@@ -1,0 +1,356 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+body {
+  background-color: #0f171e;
+  opacity: 0;
+  animation: fade-in 2s 1s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+  
+}
+
+#toaster {
+  opacity:0;
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  padding: 1rem 2rem;
+  z-index: 999;
+  border-radius: 6px;
+  box-shadow: 0 6px 40px rgba(0 0 0 / 0.35);
+  transition: opacity 0.3s ease-in;
+  animation: gradientSlide 4s ease infinite;
+}
+
+#toaster.show {
+  opacity: 1;
+}
+
+.bg-svideo-dark {
+  background-color: #0f171e;
+  background-image: linear-gradient(180deg, #1b2530 0, rgba(27, 37, 48, 0.85));
+  background-repeat: repeat-x;
+}
+
+.navbar-nav .nav-item .nav-link {
+  padding: 0;
+  margin: 0 8px;
+}
+
+.navbar-nav .active .nav-link {
+  border-bottom: 1px solid white;
+}
+
+.nav-btn {
+  color: rgba(242, 244, 246, 0.7);
+}
+
+.nav-btn:hover {
+  color: rgba(242, 244, 246, 0.9);
+}
+
+.nav-btn span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 50px;
+  vertical-align: middle;
+}
+
+.carousel-indicators li {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.section-title {
+  position: relative;
+  left: -11px;
+}
+
+.section-title img {
+  position: relative;
+  top: -3px;
+}
+
+.prime-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ADDED AFTER THE LECTURE */
+
+.dropdown-menu {
+  /* aligns dropdown to the right */
+  left: unset;
+  right: 0;
+}
+
+/* customizing dropdown-toggle's color */
+nav .dropdown-toggle {
+  color: #ffffffa6;
+}
+nav .dropdown-toggle:hover,
+nav .dropdown-toggle:focus {
+  color: white;
+}
+
+nav .dropdown-menu {
+  background-color: #252e39;
+  padding: 0;
+}
+
+nav .dropdown-item {
+  color: #f2f4f6e6;
+  padding: 14px 48px 14px 16px;
+  border-bottom: 1px solid #303c4a;
+}
+
+nav li:last-child .dropdown-item {
+  border: none;
+}
+
+nav .btn-group .dropdown-menu .dropdown-item:last-child {
+  border-bottom: none;
+}
+
+nav .dropdown-item:focus,
+nav .dropdown-item:hover {
+  color: white;
+  background-color: transparent;
+}
+
+/* customizing carousel controls */
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 42px;
+  height: 42px;
+  filter: drop-shadow(0 6px 3px rgba(0, 0, 0, 0.3));
+}
+.carousel-control-prev-icon {
+  background-image: url(../logo/prev-arrow.svg);
+}
+
+.carousel-control-next-icon {
+  background-image: url(../logo/next-arrow.svg);
+}
+
+.carousel-indicators li {
+  box-shadow: 1px 1px 4px rgb(0 0 0 / 40%);
+  border-top: 0;
+  border-bottom: 0;
+}
+
+/* footer section */
+a {
+  color: #01a3db;
+}
+
+a:hover {
+  color: #14b5eb;
+}
+
+.gradient {
+  background: linear-gradient(270deg, rgb(76, 175, 125), rgb(165, 230, 13));
+  background-size: 400%;
+}
+
+@keyframes gradientSlide {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+footer {
+  text-align: center;
+  
+}
+
+footer .footer-logo {
+  display: inline-block;
+  width: 120px;
+  height: 48px;
+  background-image: url("../logo/strivevideo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+footer ul:last-of-type {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.strive-card {
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+}
+
+.infos-container {
+  color: white;
+  background: #1b2530;
+  background: linear-gradient(rgba(27,37,48,0),#1b2530 48px);
+  position: absolute;
+  transform: translateY(-3.3rem);
+  padding: 3rem .75rem 1rem;
+  opacity: 0;
+  transition: all 0.25s ease-in-out, padding 0.25s ease-out 0.15s;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.infos-content .play-btn:not(:hover) {
+  background: black;
+}
+
+.infos-content .play-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  position: relative;
+  transform: translateX(-60px);
+  opacity: 0;
+  transition: transform 0.3s ease 0.4s, opacity 0.3s ease-out 0.5s;
+}
+
+.infos-content .play-btn:hover {
+  border: none;
+  animation: gradientSlide 4s ease infinite;
+}
+
+.infos-content .play-btn::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left: 2px;
+  margin: auto;
+  border-style: solid;
+  border-width: 7px 0 7px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.infos-content .season {
+  transform: translateX(-60px);
+  transition: transform 0.25s ease-out 0.4s;
+}
+
+.infos-content .plus-btn {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.infos-content .plus-btn::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: white;
+  top:0; 
+  right:0;
+  bottom:0;
+  left:0;
+  margin: auto;
+}
+
+.infos-content .plus-btn::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: white;
+  top:0; 
+  right:0;
+  bottom:0;
+  left:0;
+  margin: auto;
+}
+
+.infos-content p, .infos-content h6, .infos-content .movie-footer {
+  opacity: 0;
+  transform: translateY(-4px);
+}
+
+.infos-content p.prime-title{
+  transition: all 1s ease-out 0.15s;
+} 
+
+.infos-content > h6 {
+  transition: all 1s ease-out 0.25s;
+} 
+
+.infos-content > h6 + p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  line-height: 1.3;
+  transition: all 1s ease-out 0.35s;
+}
+
+.infos-content .movie-footer {
+  transition: all 1s ease-out 0.45s;
+
+}
+
+.infos-content .prime-title {
+  color: #00A8E1;
+
+  font-weight: 600;
+}
+
+.strive-card:hover {
+  transform: scale(1.2);
+  z-index: 10;
+}
+
+.strive-card:hover .infos-container {
+  opacity: 1;
+  transform: translateY(-3rem);
+  padding: 3rem 1rem 1rem;
+  pointer-events: initial;
+}
+
+.strive-card:hover .infos-content .season, .strive-card:hover .infos-content p, .strive-card:hover .infos-content > h6,.strive-card:hover .infos-content .movie-footer {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.strive-card:hover .infos-content .play-btn {
+  opacity:1;
+  transform: translateX(0);
+}
+
