@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Pair Programming D8 M2</title>
+    <style>
+        .border-for-first-col {
+            border: 2px solid black;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            /* boder */
+        }
+
+        .middle-border {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+
+        .bottom-border {
+            border: 2px solid black;
+            border-left: none;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .myDiv {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-underline {
+            text-decoration: none;
+            color: lightslategray;
+        }
+
+        .no-margin {
+            margin: 0;
+        }
+
+        .yellowish {
+            background: rgb(255, 255, 196);
+        }
+
+        .very-yellow {
+            background: rgb(255, 255, 0);
+        }
+
+        .yellow-strong {
+            background: rgb(255, 187, 0);
+        }
+
+        .yellow-border {
+            border-top-right-radius: 50px;
+        }
+
+        .yellow-strong-border {
+            border-bottom-right-radius: 50px;
+        }
+
+        span {
+            font-weight: lighter;
+            font-size: 35px;
+        }
+
+        .img-resized {
+            height: 250px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="pt-3 text-center">Exercise 1</h1>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum culpa, consequuntur ipsa
+            maxime obcaecati
+            reprehenderit!</p>
+        <div class="row text-center">
+            <div class="col-12 d-flex">
+                <div class="col-6 bg-success border-for-first-col d-flex justify-content-center align-items-center"
+                    style="height: 400px;">
+                    <p class="align-middle" hieght="100">
+                        consequuntur ipsa
+                        maxime
+                        obcaecati</p>
+                </div>
+                <div class="col-2 bg-info middle-border d-flex align-items-end justify-content-center"
+                    style="height: 400px;">
+                    <strong>
+                        <p>some text</p>
+                    </strong>
+                </div>
+                <div class="col-4 bottom-border" style="height: 400px;">
+                    <div d-flex>
+                        <div class="col-12 yellowish yellow-border d-flex align-items-center justify-content-center"
+                            style="height: 132px;">
+                            <p>some text</p>
+                        </div>
+                        <div class="col-12 very-yellow d-flex align-items-center justify-content-center"
+                            style="height: 132px;">
+                            <p>some text</p>
+                        </div>
+                        <div class="col-12 yellow-strong yellow-strong-border d-flex align-items-center justify-content-center"
+                            style="height: 132px;">
+                            <p>some text</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="pt-3 text-center pt-5">Exercise 2</h1>
+        <div class="row">
+            <div class="col justify-content-around ">
+                <p class="m-auto text-center">Lorem ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Mollitia,
+                    reprehenderit!</p>
+            </div>
+        </div>
+        <div class="container mt-4 d-flex text-center">
+            <div class="row d-flex justify-content-around px-0 py-5">
+                <div class="col-4">
+                    <div class="card bg-light px-0" style="width: 410px; height: 300px;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Light card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <div class="row d-flex">
+                            <div class="col-12">
+                                <a href="#"
+                                    class="btn btn-primary d-flex justify-content-center align-items-center mx-auto"
+                                    style="margin-bottom: 20px; width: 250px; height: 50px;">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-4">
+                    <div class="card bg-light px-0" style="width: 410px; height: 300px;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Light card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 align-middle">
+                                <a href="#"
+                                    class="btn btn-primary d-flex justify-content-center align-items-center mx-auto"
+                                    style="margin-bottom: 20px; width: 250px; height: 50px;">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-4">
+                    <div class="card bg-light px-0" style="width: 410px; height: 300px;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Light card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="#"
+                                    class="btn btn-primary d-flex justify-content-center align-items-center mx-auto"
+                                    style="margin-bottom: 20px; width: 250px; height: 50px;">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h1 class="pt-3 text-center pt-5">Exercise 3</h1>
+        <div class="row">
+            <div class="col justify-content-around ">
+                <p class="m-auto text-center">Lorem ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Mollitia,
+                    reprehenderit!</p>
+            </div>
+        </div>
+        <div class="container mt-4 d-flex bg-light">
+            <div class="row d-flex justify-content-around px-0 py-5">
+                <div class="col-4">
+                    <div class="card px-0">
+                        <img src="./img.png" class="card-img-top img-resized" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content.
+                                This content is a little bit longer.</p>
+                            <div class="row">
+                                <div class="col-6"><a href="#" class="btn-sm btn-secondary">View</a>
+                                    <a href="#" class="btn-sm btn-secondary">Edit</a>
+                                </div>
+
+                                <div class="col-6">
+                                    <small class="text-muted">3 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-4">
+                    <div class="card px-0">
+                        <img src="./img.png" class="card-img-top img-resized" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content.
+                                This content is a little bit longer.</p>
+                            <div class="row">
+                                <div class="col-6"><a href="#" class="btn-sm btn-secondary">View</a>
+                                    <a href="#" class="btn-sm btn-secondary">Edit</a>
+                                </div>
+
+                                <div class="col-6">
+                                    <small class="text-muted">3 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-4">
+                    <div class="card px-0">
+                        <img src="./img.png" class="card-img-top img-resized" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content.
+                                This content is a little bit longer.</p>
+                            <div class="row">
+                                <div class="col-6"><a href="#" class="btn-sm btn-secondary">View</a>
+                                    <a href="#" class="btn-sm btn-secondary">Edit</a>
+                                </div>
+
+                                <div class="col-6">
+                                    <small class="text-muted">3 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col-4 pt-4">
+                    <div class="card px-0">
+                        <img src="./img.png" class="card-img-top img-resized" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content.
+                                This content is a little bit longer.</p>
+                            <div class="row">
+                                <div class="col-6"><a href="#" class="btn-sm btn-secondary">View</a>
+                                    <a href="#" class="btn-sm btn-secondary">Edit</a>
+                                </div>
+
+                                <div class="col-6">
+                                    <small class="text-muted">3 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col-4 pt-4">
+                    <div class="card px-0">
+                        <img src="./img.png" class="card-img-top img-resized" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content.
+                                This content is a little bit longer.</p>
+                            <div class="row">
+                                <div class="col-6"><a href="#" class="btn-sm btn-secondary">View</a>
+                                    <a href="#" class="btn-sm btn-secondary">Edit</a>
+                                </div>
+
+                                <div class="col-6">
+                                    <small class="text-muted">3 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col-4 pt-4">
+                    <div class="card px-0">
+                        <img src="./img.png" class="card-img-top img-resized" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content.
+                                This content is a little bit longer.</p>
+                            <div class="row">
+                                <div class="col-6"><a href="#" class="btn-sm btn-secondary">View</a>
+                                    <a href="#" class="btn-sm btn-secondary">Edit</a>
+                                </div>
+
+                                <div class="col-6">
+                                    <small class="text-muted">3 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col-4 pt-4">
+                    <div class="card px-0">
+                        <img src="./img.png" class="card-img-top img-resized" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content.
+                                This content is a little bit longer.</p>
+                            <div class="row">
+                                <div class="col-6"><a href="#" class="btn-sm btn-secondary">View</a>
+                                    <a href="#" class="btn-sm btn-secondary">Edit</a>
+                                </div>
+
+                                <div class="col-6">
+                                    <small class="text-muted">3 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col-4 pt-4">
+                    <div class="card px-0">
+                        <img src="./img.png" class="card-img-top img-resized" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content.
+                                This content is a little bit longer.</p>
+                            <div class="row">
+                                <div class="col-6"><a href="#" class="btn-sm btn-secondary">View</a>
+                                    <a href="#" class="btn-sm btn-secondary">Edit</a>
+                                </div>
+
+                                <div class="col-6">
+                                    <small class="text-muted">3 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col-4 pt-4">
+                    <div class="card px-0">
+                        <img src="./img.png" class="card-img-top img-resized" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content.
+                                This content is a little bit longer.</p>
+                            <div class="row">
+                                <div class="col-6"><a href="#" class="btn-sm btn-secondary">View</a>
+                                    <a href="#" class="btn-sm btn-secondary">Edit</a>
+                                </div>
+
+                                <div class="col-6">
+                                    <small class="text-muted">3 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+        <h1 class="pt-3 text-center pt-5">Exercise 4</h1>
+
+        <div class="text-center text-muted py-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum culpa, consequuntur ipsa maxime obcaecati
+                reprehenderit!</p>
+        </div>
+
+        <main role="main" class="container mb-5">
+            <div class="row">
+                <div class="col-md-8 blog-main">
+                    <h2 class="pb-2 mb-4 font-italic">Page Heading <span> Secodary Text</span></h2>
+
+                    <div class="blog-post">
+                        <div class="card mb-3">
+                            <img src="./img.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="float-left d-flex py-2">
+                                    <h5 class="card-title ">Post title</h5>
+                                </div>
+                                <div class="pb-3">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content.
+                                        This content is a little bit longer.
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus recusandae
+                                        sed quis ea magnam, rerum expedita esse asperiores corrupti odit sint aspernatur
+                                        facilis ut beatae, ab exercitationem ipsa magni ipsam?</p>
+
+                                </div>
+                                <button class="btn btn-primary">Read More --></button>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.blog-post -->
+                    <div class="blog-post">
+                        <div class="card mb-3">
+                            <img src="./img.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="float-left d-flex py-2">
+                                    <h5 class="card-title ">Post title</h5>
+                                </div>
+                                <div class="pb-3">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content.
+                                        This content is a little bit longer.
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus recusandae
+                                        sed quis ea magnam, rerum expedita esse asperiores corrupti odit sint aspernatur
+                                        facilis ut beatae, ab exercitationem ipsa magni ipsam?</p>
+
+                                </div>
+                                <button class="btn btn-primary">Read More --></button>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.blog-post -->
+                    <div class="blog-post">
+                        <div class="card mb-3">
+                            <img src="./img.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="float-left d-flex py-2">
+                                    <h5 class="card-title ">Post title</h5>
+                                </div>
+                                <div class="pb-3">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content.
+                                        This content is a little bit longer.
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus recusandae
+                                        sed quis ea magnam, rerum expedita esse asperiores corrupti odit sint aspernatur
+                                        facilis ut beatae, ab exercitationem ipsa magni ipsam?</p>
+
+                                </div>
+                                <button class="btn btn-primary">Read More --></button>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.blog-post -->
+
+                    <nav class="blog-pagination text-center">
+                        <a class="btn btn-outline-primary">
+                            <-- Older</a>
+                                <a class="btn btn-outline-secondary" tabindex="-1" aria-disabled="true">Newer --></a>
+                    </nav>
+                </div>
+                <!-- /.blog-main -->
+
+                <aside class="col-md-4 blog-sidebar">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h6 class="px-3 pt-3">Find in my blog</h6>
+                                </div>
+                                <div class="col-12" style="background-color: white;">
+                                    <form class="form-inline px-3 ">
+                                        <input class="small" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn-sm btn btn-outline-secondary my-2 mx-0"
+                                            type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ======= -->
+                    <div class="card bg-light mt-3">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h6>Categories</h6>
+                                </div>
+                                <div class="col-12" style="background-color: white;">
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores doloribus
+                                        recusandae architecto corrupti impedit facilis ab error iusto illo amet. Dolorum
+                                        molestias alias ab nulla totam, vel tenetur est modi!</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <!-- /.row -->
+        </main>
+
+
+    </div>
+
+    <footer class="container-lg" style="margin-top: 200px; margin-bottom: 50px;">
+
+        <div class="row">
+            <hr>
+            <div class="col-6 col-md-4 col-lg-3 color-p-in-col">
+                <h5>Features</h5>
+                <a class="text-underline">
+                    <p class="no-margin">Cool stuff</p>
+                </a>
+                <a class="text-underline">
+                    <p class="no-margin">Random feature</p>
+                </a>
+                <a class="text-underline">
+                    <p class="no-margin">Team feature</p>
+                </a>
+                <a class="text-underline">
+                    <p class="no-margin">Stuff for developers</p>
+                </a>
+                <a class="text-underline">
+                    <p class="no-margin">Another one</p>
+                </a>
+                <a class="text-underline">
+                    <p class="no-margin">Last time</p>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 color-p-in-col">
+                <h5>Resources</h5>
+                <a class="text-underline">
+                    <p class="no-margin">Resource</p>
+                </a>
+                <a class="text-underline">
+                    <p class="no-margin">Resource name</p>
+                </a>
+                <a class="text-underline">
+                    <p class="no-margin">Another resource</p>
+                </a>
+                <a class="text-underline">
+                    <p class="no-margin">Final resource</p>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 color-p-in-col">
+                <h5>About</h5>
+                <a class="text-underline">
+                    <p class="no-margin">Team</p>
+                </a>
+                <a class="text-underline">
+                    <p class="no-margin">Locations</p>
+                </a>
+                <a class="text-underline">
+                    <p class="no-margin">Privacy</p>
+                </a>
+                <a class="text-underline">
+                    <p class="no-margin">Terms</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
