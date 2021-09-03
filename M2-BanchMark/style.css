@@ -1,0 +1,97 @@
+body{
+  margin: 0;
+  font-family: "Lato GOG Latin", "Lato GOG", sans-serif;
+  background:#D8D8D8;
+}
+.nav-bg{
+    background-color:#2C2C2C;   
+}
+.navbar-nav {
+    font-weight: 400;
+    color: #B9B9B9;
+}
+nav.navbar-dark a.nav-link{
+    color: #B9B9B9 !important;
+}
+.carousel-control-prev, .carousel-control-next {
+    width: 0.9rem;
+}
+.div-line{
+    height:30px;
+    width: 1px;
+    background-color: #a0a0a0;
+}
+
+div.position-to-bottom{
+    position:absolute;
+    top: 550px;
+    left: 0;
+    right: 0;
+}
+div.position-to-bottom ol li{
+    background-color:#7f478c;
+}
+
+body > div:nth-of-type(4) small a{
+    color:#7f478c;
+}
+body > div:nth-of-type(4) small{
+    color:#6c6b6d;
+    font-weight:540;
+}
+
+body > div:nth-of-type(5) a:hover{
+    color:#7f478c;
+    border-bottom: 3px solid #7f478c;
+    font-weight:bold;
+}
+body > div:nth-of-type(5) a{
+    color:#6c6b6d;
+    font-weight:500;
+}
+body > div:nth-of-type(5){
+    color:#6c6b6d;
+    font-weight:bold;
+}
+a:hover{
+    border-bottom: 0px;
+}
+
+body > div:nth-of-type(5) div div div:nth-of-type(1){
+    /* background-color: darkcyan; */
+    top: 5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+     font-family: 'Oswald', sans-serif;
+    color: white;
+    
+}
+
+body > div:nth-of-type(5) div div div:nth-of-type(2){
+    top: 170px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* font-size: xx-large; */
+    font-family: 'Oswald', sans-serif;
+    color: yellow;
+    opacity: 2;
+}
+body > div:nth-of-type(5) div div div:nth-of-type(3){
+    top: 298px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* font-size: xx-large; */
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    opacity: 2;
+}
+body > div:nth-of-type(5) div div div:nth-of-type(3) .my-btn{
+    opacity: 0.5;
+    background-color: white;
+    border: 2px solid white;
+    opacity: 2;
+    /* color: white; */
+}
