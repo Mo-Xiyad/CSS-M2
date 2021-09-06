@@ -16,6 +16,27 @@ nav.navbar-dark a.nav-link{
 .carousel-control-prev, .carousel-control-next {
     width: 0.9rem;
 }
+.carousel-next{
+    height: 40px;
+    width: 40px;
+    border: 3px solid #B9B9B9;
+    border-radius: 50px;
+    background-color: black;
+    position: absolute;
+    margin: auto 0;
+    margin-right: -25px;
+}
+.carousel-prev{
+    height: 40px;
+    width: 40px;
+    border: 3px solid #B9B9B9;
+    border-radius: 50px;
+    background-color: black;
+    position: absolute;
+    margin: auto 0;
+    margin-left: -25px;
+}
+
 .div-line{
     height:30px;
     width: 1px;
